@@ -24,24 +24,19 @@ public class PreDefineDemo {
     public int binaryOperatorDemo(){
 
         BinaryOperator<Integer> binaryOperator = (value1, value2) -> (value1 - value2);
-       return
-               binaryOperator.apply(2, 9));
+       return binaryOperator.apply(2, 9);
     }
-    
-    public static void main(String... Args) {
 
+   /* public void consumerDemo(){
 
-
-
-
-        BinaryOperator<Integer> binaryOperator = (value1, value2) -> (value1 - value2);
-        System.out.println(binaryOperator.apply(2, 9));
-
-        Consumer<String> consumer = System.out::println;
+        Consumer<String> consumer = x -> System.out.println(x);
         consumer.accept("Consumer called");
-
-        Function<Integer,Integer> function = (value) -> value+2;
-        System.out.println(function.apply(3));
-
     }
+*/
+    public int functionDemo(){
+        Function<Integer,Integer> function = (value) -> value+2;
+        return function.apply(3);
+    }
+
+
 }

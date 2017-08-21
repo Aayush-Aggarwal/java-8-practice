@@ -28,7 +28,7 @@ public class IntermediateOperationDemo {
 
     public List<String> mapDemo() {
         Stream<String> stringMultiple = Stream.of("Ayush", "Aggarwal", "aman", "1234567");
-        return stringMultiple.skip(1).limit(2).map(value -> value + " end").collect(Collectors.toList());
+        return stringMultiple.skip(1).limit(2).map(value -> value + " set").collect(Collectors.toList());
     }
 
     public List<String> flatmapDemo() {
@@ -45,10 +45,10 @@ public class IntermediateOperationDemo {
         return stringMultiple.sorted().collect(Collectors.toList());
     }
 
-    public List<String> peekDemo() {
+    /*public List<String> peekDemo() {
         Stream<String> stringMultiple = Stream.of("Ayush", "Aggarwal", "aman", "1234567");
         return stringMultiple.sorted().collect(Collectors.toList());
-    }
+    }*/
 
         /*System.out.println("peek");
         Stream<String> stringMultiple = Stream.of("Ayush", "Aggarwal", "aman", "1234567");
